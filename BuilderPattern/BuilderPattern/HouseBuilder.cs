@@ -21,29 +21,32 @@
         bool hasFloor;
         bool hasWalls;
         bool hasRoof;
-        private HouseBuilder() { }
+        private HouseBuilder(bool hasFloor, bool hasWalls, bool hasRoof)
+        {
+            this.hasFloor = hasFloor;
+            this.hasWalls = hasWalls;
+            this.hasRoof = hasRoof;
+        }
         public static IHouseEmpty Init()
         {
-            return new HouseBuilder();
+            return new HouseBuilder(false, false, false);
         }
         public IHouseWithFloor AddFloor()
         {
-            hasFloor = true;
-            return this;
+            return new HouseBuilder(true, this.hasWalls, this.hasRoof);
         }
         public IHouseWithWalls AddWalls()
         {
-            hasWalls = true;
-            return this;
+            return new HouseBuilder(this.hasFloor, true, this.hasRoof);
+
         }
         public IHouseWithRoof AddRoof()
         {
-            hasRoof = true;
-            return this;
+            return new HouseBuilder(this.hasFloor, this.hasWalls, true);
         }
         public House Build()
         {
-            return new House(hasFloor, hasWalls, hasRoof);
+            return new House(this.hasFloor, this.hasWalls, this.hasRoof);
         }
     }
 }
