@@ -1,21 +1,5 @@
 ﻿namespace BuilderPattern
 {
-    public interface IHouseEmpty
-    {
-        IHouseWithFloor AddFloor();
-    }
-    public interface IHouseWithFloor
-    {
-        IHouseWithWalls AddWalls();
-    }
-    public interface IHouseWithWalls
-    {
-        IHouseWithRoof AddRoof();
-    }
-    public interface IHouseWithRoof
-    {
-        House Build();
-    }
     public class HouseBuilder : IHouseEmpty, IHouseWithFloor, IHouseWithWalls, IHouseWithRoof
     {
         bool hasFloor;
@@ -38,7 +22,6 @@
         public IHouseWithWalls AddWalls()
         {
             return new HouseBuilder(this.hasFloor, true, this.hasRoof);
-
         }
         public IHouseWithRoof AddRoof()
         {

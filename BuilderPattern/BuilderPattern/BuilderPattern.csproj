@@ -36,6 +36,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="House.cs" />
     <Compile Include="HouseBuilder.cs" />
+    <Compile Include="Interfaces\IHouseEmpty.cs" />
+    <Compile Include="Interfaces\IHouseWithFloor.cs" />
+    <Compile Include="Interfaces\IHouseWithRoof.cs" />
+    <Compile Include="Interfaces\IHouseWithWalls.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
