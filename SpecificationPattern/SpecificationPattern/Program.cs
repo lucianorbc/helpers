@@ -1,11 +1,11 @@
-﻿using System;
-using BuilderPattern;
+﻿using BuilderPattern;
+using System;
 
 namespace SpecificationPattern
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             Console.WriteLine($"Specification Demo\n\n\n");
 

@@ -4,7 +4,7 @@ namespace BuilderPattern
 {
     public class WallsSpecification : IWallsSpecification, IBuildingSpecification<Walls>
     {
-        private int windowCount;
+        private readonly int windowCount;
 
         private WallsSpecification(int windowCount)
         {

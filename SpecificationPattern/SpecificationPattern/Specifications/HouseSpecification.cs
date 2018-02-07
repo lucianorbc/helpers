@@ -4,10 +4,10 @@ namespace BuilderPattern
 {
     public class HouseSpecification : IHouseSpecification, IHouseWithAddressSpecification, IHousewithFloorSpecification, IHousewithWallsSpecification, IHouseWithRoofSpecification, IBuildingSpecification<House>
     {
-        string address;
-        IBuildingSpecification<Floor> floor;
-        IBuildingSpecification<Walls> walls;
-        IBuildingSpecification<Roof> roof;
+        private readonly string address;
+        private readonly IBuildingSpecification<Floor> floor;
+        private readonly IBuildingSpecification<Walls> walls;
+        private readonly IBuildingSpecification<Roof> roof;
 
         public HouseSpecification(string address, IBuildingSpecification<Floor> floor, IBuildingSpecification<Walls> walls, IBuildingSpecification<Roof> roof)
         {

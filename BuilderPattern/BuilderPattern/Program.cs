@@ -4,7 +4,7 @@ namespace BuilderPattern
 {
     class MainClass
     {
-        public static void Main(string[] args)
+        public static void Main()
         {
             Console.WriteLine($"Builder Demo\n\n\n");
 

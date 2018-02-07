@@ -4,8 +4,8 @@ namespace BuilderPattern
 {
     public class RoofSpecification : IRoofSpecification, IRoofWithTile, IBuildingSpecification<Roof>
     {
-        private int roofTileCount;
-        private string roofTileColor;
+        private readonly int roofTileCount;
+        private readonly string roofTileColor;
 
         private RoofSpecification(int roofTileCount, string roofTileColor)
         {

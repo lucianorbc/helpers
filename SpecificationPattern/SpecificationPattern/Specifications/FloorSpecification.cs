@@ -4,7 +4,7 @@ namespace BuilderPattern
 {
     public class FloorSpecification : IFloorSpecification, IBuildingSpecification<Floor>
     {
-        private int tileCount;
+        private readonly int tileCount;
 
         private FloorSpecification(int tileCount)
         {
