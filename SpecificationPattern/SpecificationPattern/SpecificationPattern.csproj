@@ -37,25 +37,21 @@
     <Compile Include="Models\House.cs" />
     <Compile Include="Models\Roof.cs" />
     <Compile Include="Models\Walls.cs" />
-    <Compile Include="Specifications\FloorSpecification.cs" />
-    <Compile Include="Specifications\HouseSpecification.cs" />
-    <Compile Include="Specifications\RoofSpecification.cs" />
-    <Compile Include="Specifications\WallsSpecification.cs" />
-    <Compile Include="Specifications\Interfaces\IBuildingSpecification.cs" />
-    <Compile Include="Specifications\Interfaces\IFloorSpecification.cs" />
-    <Compile Include="Specifications\Interfaces\IHouseSpecification.cs" />
-    <Compile Include="Specifications\Interfaces\IHouseWithAddressSpecification.cs" />
-    <Compile Include="Specifications\Interfaces\IHousewithFloorSpecification.cs" />
-    <Compile Include="Specifications\Interfaces\IHouseWithRoofSpecification.cs" />
-    <Compile Include="Specifications\Interfaces\IHousewithWallsSpecification.cs" />
-    <Compile Include="Specifications\Interfaces\IRoofSpecification.cs" />
-    <Compile Include="Specifications\Interfaces\IRoofWithTile.cs" />
-    <Compile Include="Specifications\Interfaces\IWallsSpecification.cs" />
+    <Compile Include="Specifications\Floor\FloorSpecification.cs" />
+    <Compile Include="Specifications\House\HouseSpecification.cs" />
+    <Compile Include="Specifications\Roof\RoofSpecification.cs" />
+    <Compile Include="Specifications\Walls\WallsSpecification.cs" />
+    <Compile Include="Specifications\Base\IBuildingSpecification.cs" />
+    <Compile Include="Specifications\Floor\Interfaces\IFloorSpecification.cs" />
+    <Compile Include="Specifications\House\Interfaces\IHouseSpecification.cs" />
+    <Compile Include="Specifications\House\Interfaces\IHouseWithAddressSpecification.cs" />
+    <Compile Include="Specifications\House\Interfaces\IHousewithFloorSpecification.cs" />
+    <Compile Include="Specifications\House\Interfaces\IHouseWithRoofSpecification.cs" />
+    <Compile Include="Specifications\House\Interfaces\IHousewithWallsSpecification.cs" />
+    <Compile Include="Specifications\Roof\Interfaces\IRoofSpecification.cs" />
+    <Compile Include="Specifications\Roof\Interfaces\IRoofWithTile.cs" />
+    <Compile Include="Specifications\Walls\interfaces\IWallsSpecification.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-    <Folder Include="Specifications\" />
-    <Folder Include="Specifications\Interfaces\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
